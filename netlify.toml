@@ -1,25 +1,25 @@
 [build]
   command = "npm run build"
-  publish = "out"
+  publish = ".next"
 
-  [functions]
+[functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
-  [[plugins]]
+[[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# Usa una sola definición de entorno y fija Node 20
 [build.environment]
   NODE_VERSION = "20"
 
-[build.environment]
-  NODE_VERSION = "18"
-
+# Redirige /api/* a tus Netlify Functions
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
 
+# Headers de seguridad
 [[headers]]
   for = "/*"
   [headers.values]
@@ -28,6 +28,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
+# Cache de assets de Next
 [[headers]]
   for = "/_next/static/*"
   [headers.values]
