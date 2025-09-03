@@ -32,7 +32,7 @@ export const products: Product[] = [
     name: 'Scooter Electric Pro Max',
     price: 1299,
     images: [
-      '/img/scooter-electrico-3.jpeg',
+      '/IMG/scooter-electrico-3.jpeg',
     ],
     autonomia_km: 65,
     vel_max_kmh: 45,
@@ -67,7 +67,7 @@ export const products: Product[] = [
     name: 'Scooter Electric Sport Plus',
     price: 1000,
     images: [
-      '/img/scooter-electrico-2.jpeg',
+      '/IMG/scooter-electrico-2.jpeg',
     ],
     autonomia_km: 45,
     vel_max_kmh: 35,
@@ -101,7 +101,7 @@ export const products: Product[] = [
     name: 'Scooter Electric Sport',
     price: 1599,
     images: [
-      '/img/scooter-electrico-1.jpeg',
+      '/IMG/scooter-electrico-1.jpeg',
     ],
     autonomia_km: 80,
     vel_max_kmh: 55,
@@ -136,7 +136,7 @@ export const products: Product[] = [
     name: 'Electric Scooter Pro',
     price: 1950,
     images: [
-      '/img/electric-scooter-2.jpeg',
+      '/IMG/electric-scooter-2.jpeg',
     ],
     autonomia_km: 25,
     vel_max_kmh: 25,
@@ -170,7 +170,7 @@ export const products: Product[] = [
     name: 'Electric Scootert',
     price: 1299,
     images: [
-    '/img/electric-scooter-1.jpeg'
+    '/IMG/electric-scooter-1.jpeg'
     ],
     autonomia_km: 55,
     vel_max_kmh: 40,
