@@ -14,17 +14,25 @@ export const handler = async (event: any) => {
     return { statusCode: 200, headers, body: '' };
   }
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, headers, body: JSON.stringify({ error: 'Method not allowed' }) };
+    return {
+      statusCode: 405,
+      headers,
+      body: JSON.stringify({ error: 'Method not allowed' }),
+    };
   }
 
   try {
     const { checkout_token } = JSON.parse(event.body ?? '{}') as AffirmAuthorizeBody;
 
     if (!checkout_token) {
-      return { statusCode: 400, headers, body: JSON.stringify({ error: 'Checkout token is required' }) };
+      return {
+        statusCode: 400,
+        headers,
+        body: JSON.stringify({ error: 'Checkout token is required' }),
+      };
     }
 
-    // Sandbox / sin llaves privadas → mock
+    // Sandbox o sin llaves → respuesta mock
     if (process.env.AFFIRM_ENV === 'sandbox' || !process.env.AFFIRM_PRIVATE_KEY) {
       return {
         statusCode: 200,

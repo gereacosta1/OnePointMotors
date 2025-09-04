@@ -1,7 +1,25 @@
 // netlify/functions/affirm-checkout.ts
 
-type CheckoutItem = { id: string; slug: string; name: string; price: number; quantity: number; image?: string };
-type AffirmCheckoutBody = { items?: CheckoutItem[]; buyer?: { name: string; email: string; address?: string; city?: string; state?: string; zipcode?: string; phone?: string } };
+type CheckoutItem = {
+  id: string;
+  slug: string;
+  name: string;
+  price: number;
+  quantity: number;
+  image?: string;
+};
+type AffirmCheckoutBody = {
+  items?: CheckoutItem[];
+  buyer?: {
+    name: string;
+    email: string;
+    address?: string;
+    city?: string;
+    state?: string;
+    zipcode?: string;
+    phone?: string;
+  };
+};
 
 const headers = {
   'Access-Control-Allow-Origin': '*',
@@ -15,7 +33,11 @@ export const handler = async (event: any) => {
     return { statusCode: 200, headers, body: '' };
   }
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, headers, body: JSON.stringify({ error: 'Method not allowed' }) };
+    return {
+      statusCode: 405,
+      headers,
+      body: JSON.stringify({ error: 'Method not allowed' }),
+    };
   }
 
   try {
@@ -39,7 +61,10 @@ export const handler = async (event: any) => {
         name: 'EcoRide',
       },
       shipping: {
-        name: { first: buyer.name.split(' ')[0] || buyer.name, last: buyer.name.split(' ').slice(1).join(' ') || '' },
+        name: {
+          first: buyer.name.split(' ')[0] || buyer.name,
+          last: buyer.name.split(' ').slice(1).join(' ') || '',
+        },
         address: {
           line1: buyer.address || '123 Main St',
           city: buyer.city || 'Miami',
@@ -49,7 +74,10 @@ export const handler = async (event: any) => {
         },
       },
       billing: {
-        name: { first: buyer.name.split(' ')[0] || buyer.name, last: buyer.name.split(' ').slice(1).join(' ') || '' },
+        name: {
+          first: buyer.name.split(' ')[0] || buyer.name,
+          last: buyer.name.split(' ').slice(1).join(' ') || '',
+        },
         address: {
           line1: buyer.address || '123 Main St',
           city: buyer.city || 'Miami',
@@ -76,6 +104,7 @@ export const handler = async (event: any) => {
       total: Math.round(total * 1.08 * 100),
     };
 
+    // Sandbox o sin llaves → respuesta mock
     if (process.env.AFFIRM_ENV === 'sandbox' || !process.env.AFFIRM_PRIVATE_KEY) {
       return {
         statusCode: 200,
@@ -87,6 +116,7 @@ export const handler = async (event: any) => {
       };
     }
 
+    // Llamado real
     const res = await fetch('https://sandbox.affirm.com/api/v2/checkout/', {
       method: 'POST',
       headers: {
@@ -103,7 +133,14 @@ export const handler = async (event: any) => {
     }
 
     const data = await res.json();
-    return { statusCode: 200, headers, body: JSON.stringify({ checkout_token: data.checkout_token, redirect_url: data.redirect_url }) };
+    return {
+      statusCode: 200,
+      headers,
+      body: JSON.stringify({
+        checkout_token: data.checkout_token,
+        redirect_url: data.redirect_url,
+      }),
+    };
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : String(error);
     console.error('Affirm checkout error:', message);

@@ -14,17 +14,25 @@ export const handler = async (event: any) => {
     return { statusCode: 200, headers, body: '' };
   }
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, headers, body: JSON.stringify({ error: 'Method not allowed' }) };
+    return {
+      statusCode: 405,
+      headers,
+      body: JSON.stringify({ error: 'Method not allowed' }),
+    };
   }
 
   try {
     const { charge_id } = JSON.parse(event.body ?? '{}') as AffirmCaptureBody;
 
     if (!charge_id) {
-      return { statusCode: 400, headers, body: JSON.stringify({ error: 'Charge ID is required' }) };
+      return {
+        statusCode: 400,
+        headers,
+        body: JSON.stringify({ error: 'Charge ID is required' }),
+      };
     }
 
-    // Sandbox / sin llaves privadas → mock
+    // Sandbox o sin llaves → respuesta mock
     if (process.env.AFFIRM_ENV === 'sandbox' || !process.env.AFFIRM_PRIVATE_KEY) {
       return {
         statusCode: 200,
