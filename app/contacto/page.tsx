@@ -31,15 +31,15 @@ export default function ContactoPage() {
 
   const validateForm = () => {
     if (!form.name.trim()) {
-      toast.error('Por favor ingresa tu nombre');
+      toast.error('Please enter your name');
       return false;
     }
     if (!form.email.trim() || !form.email.includes('@')) {
-      toast.error('Por favor ingresa un email válido');
+      toast.error('Please enter a valid email');
       return false;
     }
     if (!form.message.trim()) {
-      toast.error('Por favor ingresa tu mensaje');
+      toast.error('Please enter your message');
       return false;
     }
     return true;
@@ -58,15 +58,15 @@ export default function ContactoPage() {
       
       // Mock successful submission
       setIsSubmitted(true);
-      toast.success('Mensaje enviado correctamente', {
-        description: 'Te contactaremos en las próximas 24 horas.',
+      toast.success('Message sent successfully', {
+        description: 'We will get back to you within 24 hours.',
       });
       
       // Reset form
       setForm({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
-      toast.error('Error al enviar el mensaje', {
-        description: 'Por favor intenta nuevamente en unos minutos.',
+      toast.error('Error sending message', {
+        description: 'Please try again in a few minutes.',
       });
     } finally {
       setIsLoading(false);
@@ -80,11 +80,10 @@ export default function ContactoPage() {
         <div className="container-max section-padding">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-[#0B0F10] mb-4">
-              <span className="text-gradient">Contacto</span>
+              <span className="text-gradient">Contact</span>
             </h1>
             <p className="text-lg text-[#667085] leading-relaxed">
-              ¿Tienes alguna pregunta sobre nuestros productos? Estamos aquí para ayudarte 
-              a encontrar el scooter eléctrico perfecto para ti.
+              Got questions about our products? We’re here to help you find the perfect electric scooter.
             </p>
           </div>
         </div>
@@ -100,34 +99,34 @@ export default function ContactoPage() {
                   <div className="w-16 h-16 bg-[#39FF14]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle className="w-8 h-8 text-[#00B347]" />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#0B0F10] mb-4">¡Mensaje Enviado!</h3>
+                  <h3 className="text-2xl font-bold text-[#0B0F10] mb-4">Message sent!</h3>
                   <p className="text-[#667085] mb-6">
-                    Gracias por contactarnos. Te responderemos en las próximas 24 horas.
+                    Thanks for contacting us. We’ll reply within the next 24 hours.
                   </p>
                   <Button 
                     onClick={() => setIsSubmitted(false)}
                     className="btn-primary"
                   >
-                    Enviar Otro Mensaje
+                    Send another message
                   </Button>
                 </div>
               ) : (
                 <>
                   <div className="mb-8">
-                    <h2 className="text-2xl font-bold text-[#0B0F10] mb-2">Envíanos un mensaje</h2>
-                    <p className="text-[#667085]">Te responderemos lo antes posible.</p>
+                    <h2 className="text-2xl font-bold text-[#0B0F10] mb-2">Send us a message</h2>
+                    <p className="text-[#667085]">We’ll get back to you as soon as possible.</p>
                   </div>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="text-sm font-medium text-[#0B0F10] mb-2 block">
-                          Nombre completo *
+                          Full name *
                         </label>
                         <Input
                           value={form.name}
                           onChange={(e) => handleInputChange('name', e.target.value)}
-                          placeholder="Tu nombre"
+                          placeholder="Your name"
                           className="rounded-xl border-gray-300 focus:border-[#39FF14] focus:ring-[#39FF14]/20"
                           required
                         />
@@ -141,7 +140,7 @@ export default function ContactoPage() {
                           type="email"
                           value={form.email}
                           onChange={(e) => handleInputChange('email', e.target.value)}
-                          placeholder="tu@email.com"
+                          placeholder="your@email.com"
                           className="rounded-xl border-gray-300 focus:border-[#39FF14] focus:ring-[#39FF14]/20"
                           required
                         />
@@ -150,7 +149,7 @@ export default function ContactoPage() {
                     
                     <div>
                       <label className="text-sm font-medium text-[#0B0F10] mb-2 block">
-                        Teléfono (opcional)
+                        Phone (optional)
                       </label>
                       <Input
                         type="tel"
@@ -163,12 +162,12 @@ export default function ContactoPage() {
                     
                     <div>
                       <label className="text-sm font-medium text-[#0B0F10] mb-2 block">
-                        Mensaje *
+                        Message *
                       </label>
                       <Textarea
                         value={form.message}
                         onChange={(e) => handleInputChange('message', e.target.value)}
-                        placeholder="¿En qué podemos ayudarte?"
+                        placeholder="How can we help?"
                         rows={5}
                         className="rounded-xl border-gray-300 focus:border-[#39FF14] focus:ring-[#39FF14]/20 resize-none"
                         required
@@ -181,11 +180,11 @@ export default function ContactoPage() {
                       className="w-full btn-primary text-lg py-4"
                     >
                       {isLoading ? (
-                        <>Enviando...</>
+                        <>Sending...</>
                       ) : (
                         <>
                           <Send className="w-5 h-5 mr-2" />
-                          Enviar Mensaje
+                          Send message
                         </>
                       )}
                     </Button>
@@ -199,16 +198,16 @@ export default function ContactoPage() {
           <div className="space-y-8">
             <Card className="border-0 shadow-lg rounded-3xl">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-[#0B0F10] mb-6">Información de Contacto</h3>
+                <h3 className="text-2xl font-bold text-[#0B0F10] mb-6">Contact information</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-[#39FF14]/10 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-[#00B347]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#0B0F10] mb-1">Teléfono</h4>
+                      <h4 className="font-semibold text-[#0B0F10] mb-1">Phone</h4>
                       <p className="text-[#667085]">+1 (555) 123-4567</p>
-                      <p className="text-sm text-[#667085]">Lun-Vie 9:00-18:00, Sáb 10:00-16:00</p>
+                      <p className="text-sm text-[#667085]">Mon–Fri 9:00–18:00, Sat 10:00–16:00</p>
                     </div>
                   </div>
                   
@@ -219,7 +218,7 @@ export default function ContactoPage() {
                     <div>
                       <h4 className="font-semibold text-[#0B0F10] mb-1">Email</h4>
                       <p className="text-[#667085]">info@ecoride.com</p>
-                      <p className="text-sm text-[#667085]">Respuesta en 24 horas</p>
+                      <p className="text-sm text-[#667085]">Reply within 24 hours</p>
                     </div>
                   </div>
                   
@@ -228,7 +227,7 @@ export default function ContactoPage() {
                       <MapPin className="w-6 h-6 text-[#00B347]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#0B0F10] mb-1">Oficina Principal</h4>
+                      <h4 className="font-semibold text-[#0B0F10] mb-1">Head office</h4>
                       <p className="text-[#667085]">1234 Biscayne Blvd, Suite 100</p>
                       <p className="text-[#667085]">Miami, FL 33132</p>
                     </div>
@@ -241,7 +240,7 @@ export default function ContactoPage() {
                     <div>
                       <h4 className="font-semibold text-[#0B0F10] mb-1">WhatsApp</h4>
                       <p className="text-[#667085]">+1 (555) 987-6543</p>
-                      <p className="text-sm text-[#667085]">Soporte inmediato</p>
+                      <p className="text-sm text-[#667085]">Instant support</p>
                     </div>
                   </div>
                 </div>
@@ -251,19 +250,19 @@ export default function ContactoPage() {
             {/* FAQ Quick Links */}
             <Card className="border-0 shadow-lg rounded-3xl">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-[#0B0F10] mb-6">Preguntas Frecuentes</h3>
+                <h3 className="text-xl font-bold text-[#0B0F10] mb-6">Frequently asked questions</h3>
                 <div className="space-y-4">
                   <div className="p-4 bg-gray-50 rounded-2xl hover:bg-[#39FF14]/5 transition-colors duration-300 cursor-pointer">
-                    <p className="font-medium text-[#0B0F10]">¿Cuánto tarda la entrega?</p>
-                    <p className="text-sm text-[#667085] mt-1">24-48 horas en área metropolitana</p>
+                    <p className="font-medium text-[#0B0F10]">How long does delivery take?</p>
+                    <p className="text-sm text-[#667085] mt-1">24–48 hours in the metro area</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-2xl hover:bg-[#39FF14]/5 transition-colors duration-300 cursor-pointer">
-                    <p className="font-medium text-[#0B0F10]">¿Qué incluye la garantía?</p>
-                    <p className="text-sm text-[#667085] mt-1">Cobertura completa motor, batería y electrónicos</p>
+                    <p className="font-medium text-[#0B0F10]">What does the warranty cover?</p>
+                    <p className="text-sm text-[#667085] mt-1">Full coverage for motor, battery and electronics</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-2xl hover:bg-[#39FF14]/5 transition-colors duration-300 cursor-pointer">
-                    <p className="font-medium text-[#0B0F10]">¿Financiación disponible?</p>
-                    <p className="text-sm text-[#667085] mt-1">Sí, con Affirm hasta 24 meses sin intereses</p>
+                    <p className="font-medium text-[#0B0F10]">Is financing available?</p>
+                    <p className="text-sm text-[#667085] mt-1">Yes — with Affirm, up to 24 months</p>
                   </div>
                 </div>
               </CardContent>

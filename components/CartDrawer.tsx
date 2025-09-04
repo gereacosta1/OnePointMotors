@@ -11,14 +11,14 @@ export function CartDrawer() {
   const { items, isOpen, toggleCart, updateQuantity, removeItem, clearCart, getTotalPrice } = useCartStore();
 
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-US', {
+    return new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
     }).format(price);
   };
 
   const handleAffirmCheckout = () => {
-    // Implementar integración con Affirm
+    // Implement Affirm integration
     console.log('Redirecting to Affirm checkout...');
   };
 
@@ -36,7 +36,7 @@ export function CartDrawer() {
           {items.length === 0 ? (
             <div className="flex-1 flex flex-col items-center justify-center space-y-4">
               <ShoppingBag className="w-16 h-16 text-gray-400" />
-              <p className="text-gray-500 text-center">Your Cart is empty.</p>
+              <p className="text-gray-500 text-center">Your cart is empty.</p>
               <Button onClick={toggleCart} className="btn-primary">
                 <Link href="/catalogo">Explore Products</Link>
               </Button>
@@ -120,7 +120,7 @@ export function CartDrawer() {
                     onClick={clearCart}
                     className="w-full text-red-500 hover:text-red-600 hover:bg-red-50 rounded-xl"
                   >
-                    empty cart
+                    Empty cart
                   </Button>
                 </div>
               </div>

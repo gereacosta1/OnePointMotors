@@ -20,7 +20,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const { addItem } = useCartStore();
 
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('es-US', {
+    return new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
     }).format(price);
@@ -43,7 +43,7 @@ export function ProductCard({ product }: ProductCardProps) {
       slug: product.slug,
     });
     
-    toast.success(`${product.name} agregado al carrito`, {
+    toast.success(`${product.name} added to cart`, {
       description: 'The product has been successfully added to your shopping cart.',
     });
     
@@ -65,13 +65,13 @@ export function ProductCard({ product }: ProductCardProps) {
           
           {product.destacado && (
             <Badge className="absolute top-4 left-4 bg-[#39FF14] text-[#0B0F10] font-semibold px-3 py-1 rounded-full">
-              ⭐ outstanding
+              ⭐ Featured
             </Badge>
           )}
           
           {product.stock < 10 && (
             <Badge className="absolute top-4 right-4 bg-red-500 text-white font-semibold px-3 py-1 rounded-full">
-              Last units!
+              Last few units!
             </Badge>
           )}
         </div>
@@ -91,7 +91,7 @@ export function ProductCard({ product }: ProductCardProps) {
             <Battery className="w-3 h-3 mr-1" />
             {product.autonomia_km}km
           </Badge>
-          <Badge variant="outline" className="text-xs border-[#00B347]/30 text-[#00B347] rounded-lg px-2 py-1">
+          <Badge variant="outline" className="text-xs border[#00B347]/30 text-[#00B347] rounded-lg px-2 py-1">
             <Gauge className="w-3 h-3 mr-1" />
             {product.vel_max_kmh} km/h
           </Badge>

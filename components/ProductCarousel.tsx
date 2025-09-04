@@ -28,7 +28,7 @@ export function ProductCarousel({
     <section className="container-max section-padding">
       <h2 className="text-2xl font-bold mb-4">{title}</h2>
 
-      {/* carrusel horizontal simple */}
+      {/* simple horizontal carousel */}
       <div className="flex gap-6 overflow-x-auto pb-2">
         {list.map((p) => (
           <div key={p.id} className="min-w-[320px]">

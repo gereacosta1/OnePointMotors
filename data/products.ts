@@ -31,9 +31,7 @@ export const products: Product[] = [
     slug: 'scooter-electric-pro-max',
     name: 'Scooter Electric Pro Max',
     price: 1299,
-    images: [
-      '/IMG/scooter-electrico-3.jpeg',
-    ],
+    images: ['/IMG/scooter-electrico-3.jpeg'],
     autonomia_km: 65,
     vel_max_kmh: 45,
     potencia_w: 800,
@@ -42,33 +40,32 @@ export const products: Product[] = [
     garantia_meses: 24,
     stock: 15,
     destacado: true,
-    description: 'El scooter eléctrico más avanzado de nuestra línea premium. Diseñado para profesionales urbanos que buscan rendimiento excepcional y estilo vanguardista.',
+    description:
+      'The most advanced electric scooter in our premium line. Designed for urban professionals seeking exceptional performance and cutting-edge style.',
     features: [
-      'Motor dual de 800W para máximo rendimiento',
-      'Batería de litio de larga duración (65km)',
-      'Sistema de frenos regenerativo',
-      'Pantalla LCD con conectividad Bluetooth',
-      'Luces LED automáticas',
-      'Resistente al agua IP65'
+      'Dual 800W motor for maximum performance',
+      'Long-lasting lithium battery (65 km)',
+      'Regenerative braking system',
+      'LCD display with Bluetooth connectivity',
+      'Automatic LED lights',
+      'IP65 water-resistant',
     ],
     specifications: {
-      motor: 'Motor brushless dual 800W',
-      bateria: 'Litio 48V 15Ah Samsung',
-      frenos: 'Disco delantero + tambor trasero',
-      neumaticos: 'Tubeless 10" anti-punctura',
+      motor: 'Dual 800W brushless motor',
+      bateria: 'Lithium 48V 15Ah Samsung',
+      frenos: 'Front disc + rear drum',
+      neumaticos: 'Tubeless 10" puncture-resistant',
       peso_max: '120 kg',
-      tiempo_carga: '4-6 horas',
-      certificaciones: ['CE', 'FCC', 'RoHS']
-    }
+      tiempo_carga: '4–6 hours',
+      certificaciones: ['CE', 'FCC', 'RoHS'],
+    },
   },
   {
     id: '2',
     slug: 'scooter-electric-sport-plus',
     name: 'Scooter Electric Sport Plus',
     price: 1599,
-    images: [
-      '/IMG/scooter-electrico-2.jpeg',
-    ],
+    images: ['/IMG/scooter-electrico-2.jpeg'],
     autonomia_km: 45,
     vel_max_kmh: 35,
     potencia_w: 500,
@@ -77,32 +74,31 @@ export const products: Product[] = [
     garantia_meses: 18,
     stock: 25,
     destacado: true,
-    description: 'Perfecto equilibrio entre rendimiento y portabilidad para la movilidad urbana diaria.',
+    description:
+      'Perfect balance between performance and portability for everyday urban mobility.',
     features: [
-      'Motor de 500W eficiente',
-      'Diseño plegable ultracompacto',
-      'Batería extraíble',
-      'Frenos de disco delanteros',
-      'App móvil incluida'
+      'Efficient 500W motor',
+      'Ultra-compact foldable design',
+      'Removable battery',
+      'Front disc brake',
+      'Companion mobile app',
     ],
     specifications: {
-      motor: 'Motor brushless 500W',
-      bateria: 'Litio 36V 10Ah LG',
-      frenos: 'Disco delantero + eléctrico trasero',
-      neumaticos: 'Sólidos 8.5" sin mantenimiento',
+      motor: '500W brushless motor',
+      bateria: 'Lithium 36V 10Ah LG',
+      frenos: 'Front disc + rear electronic',
+      neumaticos: 'Solid 8.5" maintenance-free',
       peso_max: '100 kg',
-      tiempo_carga: '3-4 horas',
-      certificaciones: ['CE', 'FCC']
-    }
+      tiempo_carga: '3–4 hours',
+      certificaciones: ['CE', 'FCC'],
+    },
   },
   {
     id: '3',
     slug: 'scooter-electric-sport',
     name: 'Scooter Electric Sport',
     price: 1999,
-    images: [
-      '/IMG/scooter-electrico-1.jpeg',
-    ],
+    images: ['/IMG/scooter-electrico-1.jpeg'],
     autonomia_km: 80,
     vel_max_kmh: 55,
     potencia_w: 1200,
@@ -111,33 +107,32 @@ export const products: Product[] = [
     garantia_meses: 36,
     stock: 8,
     destacado: true,
-    description: 'La bestia de alto rendimiento para aventureros urbanos. Velocidad, potencia y autonomía excepcionales.',
+    description:
+      'The high-performance beast for urban adventurers. Exceptional speed, power, and range.',
     features: [
-      'Motor dual 1200W de alta potencia',
-      'Suspensión delantera y trasera',
-      'Batería de máxima capacidad',
-      'Frenos hidráulicos',
-      'Pantalla TFT a color',
-      'GPS integrado'
+      'High-power dual 1200W motor',
+      'Front and rear suspension',
+      'High-capacity battery',
+      'Hydraulic brakes',
+      'Full-color TFT display',
+      'Built-in GPS',
     ],
     specifications: {
-      motor: 'Motor brushless dual 1200W',
-      bateria: 'Litio 52V 20Ah Panasonic',
-      frenos: 'Hidráulicos delantero y trasero',
+      motor: 'Dual 1200W brushless motor',
+      bateria: 'Lithium 52V 20Ah Panasonic',
+      frenos: 'Front and rear hydraulic',
       neumaticos: 'Tubeless 11" off-road',
       peso_max: '150 kg',
-      tiempo_carga: '6-8 horas',
-      certificaciones: ['CE', 'FCC', 'RoHS', 'UN38.3']
-    }
+      tiempo_carga: '6–8 hours',
+      certificaciones: ['CE', 'FCC', 'RoHS', 'UN38.3'],
+    },
   },
   {
     id: '4',
     slug: 'electric-scooter-pro',
     name: 'Electric Scooter Pro',
     price: 2150,
-    images: [
-      '/IMG/electric-scooter-2.jpeg',
-    ],
+    images: ['/IMG/electric-scooter-2.jpeg'],
     autonomia_km: 25,
     vel_max_kmh: 25,
     potencia_w: 300,
@@ -146,32 +141,31 @@ export const products: Product[] = [
     garantia_meses: 12,
     stock: 30,
     destacado: false,
-    description: 'La opción perfecta para principiantes y trayectos cortos. Ligero, asequible y confiable.',
+    description:
+      'The perfect choice for beginners and short commutes. Lightweight, affordable, and reliable.',
     features: [
-      'Ultraligero y portátil',
-      'Ideal para principiantes',
-      'Plegado en 3 segundos',
-      'Batería de carga rápida',
-      'Precio accesible'
+      'Ultra-light and portable',
+      'Ideal for beginners',
+      '3-second folding',
+      'Fast-charging battery',
+      'Budget-friendly price',
     ],
     specifications: {
-      motor: 'Motor brushless 300W',
-      bateria: 'Litio 36V 6Ah',
-      frenos: 'Eléctrico + pie trasero',
-      neumaticos: 'Sólidos 8" anti-punctura',
+      motor: '300W brushless motor',
+      bateria: 'Lithium 36V 6Ah',
+      frenos: 'Electronic + rear foot brake',
+      neumaticos: 'Solid 8" puncture-resistant',
       peso_max: '80 kg',
-      tiempo_carga: '2-3 horas',
-      certificaciones: ['CE', 'FCC']
-    }
+      tiempo_carga: '2–3 hours',
+      certificaciones: ['CE', 'FCC'],
+    },
   },
   {
     id: '5',
     slug: 'parlante-jbl-go',
-    name: 'Parlante JBL Go',
+    name: 'JBL Go Speaker',
     price: 350,
-    images: [
-    '/IMG/parlanteJBL3.jpeg'
-    ],
+    images: ['/IMG/parlanteJBL3.jpeg'],
     autonomia_km: 55,
     vel_max_kmh: 40,
     potencia_w: 600,
@@ -180,32 +174,31 @@ export const products: Product[] = [
     garantia_meses: 24,
     stock: 12,
     destacado: false,
-    description: 'Confort supremo para viajes largos. Suspensión premium y asiento ergonómico opcional.',
+    description:
+      'Supreme comfort for long rides. Premium suspension and an optional ergonomic seat.',
     features: [
-      'Suspensión delantera premium',
-      'Asiento ergonómico opcional',
-      'Manillar ajustable',
-      'Luces LED premium',
-      'Guardabarros integrados'
+      'Premium front suspension',
+      'Optional ergonomic seat',
+      'Adjustable handlebar',
+      'Premium LED lights',
+      'Integrated fenders',
     ],
     specifications: {
-      motor: 'Motor brushless 600W',
-      bateria: 'Litio 48V 12Ah LG',
-      frenos: 'Disco delantero + tambor trasero',
-      neumaticos: 'Tubeless 10" confort',
+      motor: '600W brushless motor',
+      bateria: 'Lithium 48V 12Ah LG',
+      frenos: 'Front disc + rear drum',
+      neumaticos: 'Tubeless 10" comfort',
       peso_max: '110 kg',
-      tiempo_carga: '4-5 horas',
-      certificaciones: ['CE', 'FCC', 'RoHS']
-    }
+      tiempo_carga: '4–5 hours',
+      certificaciones: ['CE', 'FCC', 'RoHS'],
+    },
   },
   {
     id: '6',
     slug: 'electric-bike',
     name: 'Electric Bike',
     price: 3500,
-    images: [
-    '/IMG/bici-electric-negra.jpeg'
-    ],
+    images: ['/IMG/bici-electric-negra.jpeg'],
     autonomia_km: 55,
     vel_max_kmh: 40,
     potencia_w: 600,
@@ -214,32 +207,31 @@ export const products: Product[] = [
     garantia_meses: 24,
     stock: 12,
     destacado: true,
-    description: 'Confort supremo para viajes largos. Suspensión premium y asiento ergonómico opcional.',
+    description:
+      'Supreme comfort for long rides. Premium suspension and an optional ergonomic seat.',
     features: [
-      'Suspensión delantera premium',
-      'Asiento ergonómico opcional',
-      'Manillar ajustable',
-      'Luces LED premium',
-      'Guardabarros integrados'
+      'Premium front suspension',
+      'Optional ergonomic seat',
+      'Adjustable handlebar',
+      'Premium LED lights',
+      'Integrated fenders',
     ],
     specifications: {
-      motor: 'Motor brushless 600W',
-      bateria: 'Litio 48V 12Ah LG',
-      frenos: 'Disco delantero + tambor trasero',
-      neumaticos: 'Tubeless 10" confort',
+      motor: '600W brushless motor',
+      bateria: 'Lithium 48V 12Ah LG',
+      frenos: 'Front disc + rear drum',
+      neumaticos: 'Tubeless 10" comfort',
       peso_max: '110 kg',
-      tiempo_carga: '4-5 horas',
-      certificaciones: ['CE', 'FCC', 'RoHS']
-    }
+      tiempo_carga: '4–5 hours',
+      certificaciones: ['CE', 'FCC', 'RoHS'],
+    },
   },
   {
     id: '7',
     slug: 'parlante-jbl',
-    name: 'Parlante JBL',
+    name: 'JBL Speaker',
     price: 300,
-    images: [
-    '/IMG/parlanteJBL.jpeg'
-    ],
+    images: ['/IMG/parlanteJBL.jpeg'],
     autonomia_km: 55,
     vel_max_kmh: 40,
     potencia_w: 600,
@@ -248,32 +240,31 @@ export const products: Product[] = [
     garantia_meses: 24,
     stock: 12,
     destacado: false,
-    description: 'Confort supremo para viajes largos. Suspensión premium y asiento ergonómico opcional.',
+    description:
+      'Supreme comfort for long rides. Premium suspension and an optional ergonomic seat.',
     features: [
-      'Suspensión delantera premium',
-      'Asiento ergonómico opcional',
-      'Manillar ajustable',
-      'Luces LED premium',
-      'Guardabarros integrados'
+      'Premium front suspension',
+      'Optional ergonomic seat',
+      'Adjustable handlebar',
+      'Premium LED lights',
+      'Integrated fenders',
     ],
     specifications: {
-      motor: 'Motor brushless 600W',
-      bateria: 'Litio 48V 12Ah LG',
-      frenos: 'Disco delantero + tambor trasero',
-      neumaticos: 'Tubeless 10" confort',
+      motor: '600W brushless motor',
+      bateria: 'Lithium 48V 12Ah LG',
+      frenos: 'Front disc + rear drum',
+      neumaticos: 'Tubeless 10" comfort',
       peso_max: '110 kg',
-      tiempo_carga: '4-5 horas',
-      certificaciones: ['CE', 'FCC', 'RoHS']
-    }
+      tiempo_carga: '4–5 hours',
+      certificaciones: ['CE', 'FCC', 'RoHS'],
+    },
   },
   {
     id: '8',
     slug: 'parlante-jbl-pro',
-    name: 'Parlante JBL PRO',
+    name: 'JBL PRO Speaker',
     price: 400,
-    images: [
-    '/IMG/parlanteJBL2.jpeg'
-    ],
+    images: ['/IMG/parlanteJBL2.jpeg'],
     autonomia_km: 55,
     vel_max_kmh: 40,
     potencia_w: 600,
@@ -282,32 +273,31 @@ export const products: Product[] = [
     garantia_meses: 24,
     stock: 12,
     destacado: false,
-    description: 'Confort supremo para viajes largos. Suspensión premium y asiento ergonómico opcional.',
+    description:
+      'Supreme comfort for long rides. Premium suspension and an optional ergonomic seat.',
     features: [
-      'Suspensión delantera premium',
-      'Asiento ergonómico opcional',
-      'Manillar ajustable',
-      'Luces LED premium',
-      'Guardabarros integrados'
+      'Premium front suspension',
+      'Optional ergonomic seat',
+      'Adjustable handlebar',
+      'Premium LED lights',
+      'Integrated fenders',
     ],
     specifications: {
-      motor: 'Motor brushless 600W',
-      bateria: 'Litio 48V 12Ah LG',
-      frenos: 'Disco delantero + tambor trasero',
-      neumaticos: 'Tubeless 10" confort',
+      motor: '600W brushless motor',
+      bateria: 'Lithium 48V 12Ah LG',
+      frenos: 'Front disc + rear drum',
+      neumaticos: 'Tubeless 10" comfort',
       peso_max: '110 kg',
-      tiempo_carga: '4-5 horas',
-      certificaciones: ['CE', 'FCC', 'RoHS']
-    }
+      tiempo_carga: '4–5 hours',
+      certificaciones: ['CE', 'FCC', 'RoHS'],
+    },
   },
   {
     id: '9',
     slug: 'ruedas-neumaticos',
-    name: 'Ruedas Neumaticos',
+    name: 'Wheels and Tires',
     price: 100,
-    images: [
-    '/IMG/ruedas.jpeg'
-    ],
+    images: ['/IMG/ruedas.jpeg'],
     autonomia_km: 55,
     vel_max_kmh: 40,
     potencia_w: 600,
@@ -316,32 +306,31 @@ export const products: Product[] = [
     garantia_meses: 24,
     stock: 12,
     destacado: false,
-    description: 'Confort supremo para viajes largos. Suspensión premium y asiento ergonómico opcional.',
+    description:
+      'Supreme comfort for long rides. Premium suspension and an optional ergonomic seat.',
     features: [
-      'Suspensión delantera premium',
-      'Asiento ergonómico opcional',
-      'Manillar ajustable',
-      'Luces LED premium',
-      'Guardabarros integrados'
+      'Premium front suspension',
+      'Optional ergonomic seat',
+      'Adjustable handlebar',
+      'Premium LED lights',
+      'Integrated fenders',
     ],
     specifications: {
-      motor: 'Motor brushless 600W',
-      bateria: 'Litio 48V 12Ah LG',
-      frenos: 'Disco delantero + tambor trasero',
-      neumaticos: 'Tubeless 10" confort',
+      motor: '600W brushless motor',
+      bateria: 'Lithium 48V 12Ah LG',
+      frenos: 'Front disc + rear drum',
+      neumaticos: 'Tubeless 10" comfort',
       peso_max: '110 kg',
-      tiempo_carga: '4-5 horas',
-      certificaciones: ['CE', 'FCC', 'RoHS']
-    }
+      tiempo_carga: '4–5 hours',
+      certificaciones: ['CE', 'FCC', 'RoHS'],
+    },
   },
   {
     id: '10',
     slug: 'scooter-electric',
     name: 'Scooter Electric',
     price: 1000,
-    images: [
-    '/IMG/electricBike3.jpeg'
-    ],
+    images: ['/IMG/electricBike3.jpeg'],
     autonomia_km: 55,
     vel_max_kmh: 40,
     potencia_w: 600,
@@ -350,32 +339,31 @@ export const products: Product[] = [
     garantia_meses: 24,
     stock: 12,
     destacado: false,
-    description: 'Confort supremo para viajes largos. Suspensión premium y asiento ergonómico opcional.',
+    description:
+      'Supreme comfort for long rides. Premium suspension and an optional ergonomic seat.',
     features: [
-      'Suspensión delantera premium',
-      'Asiento ergonómico opcional',
-      'Manillar ajustable',
-      'Luces LED premium',
-      'Guardabarros integrados'
+      'Premium front suspension',
+      'Optional ergonomic seat',
+      'Adjustable handlebar',
+      'Premium LED lights',
+      'Integrated fenders',
     ],
     specifications: {
-      motor: 'Motor brushless 600W',
-      bateria: 'Litio 48V 12Ah LG',
-      frenos: 'Disco delantero + tambor trasero',
-      neumaticos: 'Tubeless 10" confort',
+      motor: '600W brushless motor',
+      bateria: 'Lithium 48V 12Ah LG',
+      frenos: 'Front disc + rear drum',
+      neumaticos: 'Tubeless 10" comfort',
       peso_max: '110 kg',
-      tiempo_carga: '4-5 horas',
-      certificaciones: ['CE', 'FCC', 'RoHS']
-    }
+      tiempo_carga: '4–5 hours',
+      certificaciones: ['CE', 'FCC', 'RoHS'],
+    },
   },
   {
     id: '11',
     slug: 'electric-bike',
     name: 'Electric Bike',
     price: 2500,
-    images: [
-    '/IMG/electricBike2.jpeg'
-    ],
+    images: ['/IMG/electricBike2.jpeg'],
     autonomia_km: 55,
     vel_max_kmh: 40,
     potencia_w: 600,
@@ -384,23 +372,24 @@ export const products: Product[] = [
     garantia_meses: 24,
     stock: 12,
     destacado: false,
-    description: 'Confort supremo para viajes largos. Suspensión premium y asiento ergonómico opcional.',
+    description:
+      'Supreme comfort for long rides. Premium suspension and an optional ergonomic seat.',
     features: [
-      'Suspensión delantera premium',
-      'Asiento ergonómico opcional',
-      'Manillar ajustable',
-      'Luces LED premium',
-      'Guardabarros integrados'
+      'Premium front suspension',
+      'Optional ergonomic seat',
+      'Adjustable handlebar',
+      'Premium LED lights',
+      'Integrated fenders',
     ],
     specifications: {
-      motor: 'Motor brushless 600W',
-      bateria: 'Litio 48V 12Ah LG',
-      frenos: 'Disco delantero + tambor trasero',
-      neumaticos: 'Tubeless 10" confort',
+      motor: '600W brushless motor',
+      bateria: 'Lithium 48V 12Ah LG',
+      frenos: 'Front disc + rear drum',
+      neumaticos: 'Tubeless 10" comfort',
       peso_max: '110 kg',
-      tiempo_carga: '4-5 horas',
-      certificaciones: ['CE', 'FCC', 'RoHS']
-    }
+      tiempo_carga: '4–5 hours',
+      certificaciones: ['CE', 'FCC', 'RoHS'],
+    },
   },
 ];
 

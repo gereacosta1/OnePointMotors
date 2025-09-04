@@ -221,18 +221,18 @@ recognized for our innovation, quality, and environmental commitment.
             {[
               {
                 icon: Shield,
-                title: 'Garantía Extendida',
-                description: 'Hasta 36 meses de garantía con servicio técnico especializado en toda Latinoamérica.'
+                title: 'Extended Warranty',
+                description: 'Up to 36 months warranty with specialized technical service throughout Latin America.'
               },
               {
                 icon: Truck,
-                title: 'Envío Asegurado',
-                description: 'Entrega gratuita con seguro completo y seguimiento en tiempo real.'
+                title: 'Insured shipping',
+                description: 'Free delivery with full insurance and real-time tracking.'
               },
               {
                 icon: Star,
-                title: 'Soporte 24/7',
-                description: 'Equipo de expertos disponible siempre para resolver tus dudas y necesidades.'
+                title: '24/7 Support',
+                description: 'Team of experts always available to resolve your questions and needs.'
               }
             ].map((item, index) => (
               <Card key={index} className="group card-hover border-0 shadow-lg rounded-3xl text-center">
