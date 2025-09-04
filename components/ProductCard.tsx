@@ -44,7 +44,7 @@ export function ProductCard({ product }: ProductCardProps) {
     });
     
     toast.success(`${product.name} agregado al carrito`, {
-      description: 'El producto se ha añadido correctamente a tu carrito de compras.',
+      description: 'The product has been successfully added to your shopping cart.',
     });
     
     setIsLoading(false);
@@ -65,13 +65,13 @@ export function ProductCard({ product }: ProductCardProps) {
           
           {product.destacado && (
             <Badge className="absolute top-4 left-4 bg-[#39FF14] text-[#0B0F10] font-semibold px-3 py-1 rounded-full">
-              ⭐ Destacado
+              ⭐ outstanding
             </Badge>
           )}
           
           {product.stock < 10 && (
             <Badge className="absolute top-4 right-4 bg-red-500 text-white font-semibold px-3 py-1 rounded-full">
-              ¡Últimas unidades!
+              Last units!
             </Badge>
           )}
         </div>
@@ -106,7 +106,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <Button asChild variant="outline" className="flex-1 rounded-xl hover:bg-[#39FF14]/10 hover:border-[#39FF14]">
             <Link href={`/producto/${product.slug}`}>
               <Eye className="w-4 h-4 mr-2" />
-              Ver más
+              See more
             </Link>
           </Button>
           <Button
@@ -115,7 +115,7 @@ export function ProductCard({ product }: ProductCardProps) {
             className="flex-1 btn-secondary rounded-xl"
           >
             <ShoppingCart className="w-4 h-4 mr-2" />
-            {isLoading ? 'Agregando...' : 'Agregar'}
+            {isLoading ? 'Adding...' : 'Add'}
           </Button>
         </div>
       </CardContent>

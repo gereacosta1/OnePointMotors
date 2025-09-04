@@ -19,29 +19,28 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <Badge className="bg-[#39FF14]/10 text-[#00B347] border-[#39FF14]/20 hover:bg-[#39FF14]/20 text-sm font-medium px-4 py-2 rounded-full">
-                  ⚡ Nueva Generación 2025
+                  ⚡ New Generation 2025
                 </Badge>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  Movilidad{' '}
-                  <span className="text-gradient">Eléctrica</span>
+                  Electric{' '}
+                  <span className="text-gradient">Mobility</span>
                   <br />
-                  del Futuro
+                  of the Future
                 </h1>
                 <p className="text-lg md:text-xl text-[#667085] leading-relaxed max-w-lg">
-                  Descubre la nueva era de transporte urbano con nuestros scooters eléctricos 
-                  de última generación. Diseño premium, tecnología avanzada y compromiso ambiental.
+                  Discover a new era of urban transportation with our state-of-the-art electric scooters. Premium design, advanced technology, and environmental commitment.
                 </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild className="btn-primary text-lg px-8 py-4">
                   <Link href="/catalogo">
-                    Ver Catálogo
+                    See Catalog
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" className="text-lg px-8 py-4 rounded-2xl border-2 border-[#00B347] text-[#00B347] hover:bg-[#00B347] hover:text-white">
-                  <Link href="/contacto">Contacto</Link>
+                  <Link href="/contacto">Contact</Link>
                 </Button>
               </div>
             </div>
@@ -69,10 +68,10 @@ export default function HomePage() {
         <div className="container-max section-padding">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B0F10] mb-4">
-              ¿Por qué elegir <span className="text-gradient">EcoRide</span>?
+               Why choose<span className="text-gradient">Sunrise Store</span>?
             </h2>
             <p className="text-lg text-[#667085] max-w-2xl mx-auto">
-              Combinamos innovación tecnológica con diseño premium para ofrecerte la mejor experiencia de movilidad eléctrica.
+              We combine technological innovation with premium design to offer you the best electric mobility experience.
             </p>
           </div>
           
@@ -80,23 +79,23 @@ export default function HomePage() {
             {[
               {
                 icon: Zap,
-                title: 'Tecnología Avanzada',
-                description: 'Motores brushless de última generación con eficiencia energética superior.'
+                title: 'Advanced Technology',
+                description: 'Latest-generation brushless motors with superior energy efficiency.'
               },
               {
                 icon: Shield,
-                title: 'Garantía Premium',
-                description: 'Hasta 36 meses de garantía completa con servicio técnico especializado.'
+                title: 'Premium Guarantee',
+                description: 'Up to 36 months of full warranty with specialized technical service.'
               },
               {
                 icon: Truck,
-                title: 'Envío Gratuito',
-                description: 'Entrega gratuita en 24-48h con seguro incluido en toda la península.'
+                title: 'Free Shipping',
+                description: 'Free delivery within 24-48 hours with insurance included throughout the peninsula..'
               },
               {
                 icon: Leaf,
-                title: '100% Ecológico',
-                description: 'Movilidad sostenible con cero emisiones y materiales reciclables.'
+                title: '100% Ecological',
+                description: 'Sustainable mobility with zero emissions and recyclable materials.'
               }
             ].map((benefit, index) => (
               <Card key={index} className="group card-hover border-0 shadow-lg rounded-3xl bg-gradient-to-br from-white to-gray-50">
@@ -118,10 +117,10 @@ export default function HomePage() {
         <div className="container-max section-padding">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B0F10] mb-4">
-              Productos <span className="text-gradient">Destacados</span>
+              Products <span className="text-gradient">Featured</span>
             </h2>
             <p className="text-lg text-[#667085] max-w-2xl mx-auto">
-              Descubre nuestra selección de scooters eléctricos más populares, diseñados para diferentes estilos de vida.
+              Discover our selection of the most popular electric scooters, designed for different lifestyles.
             </p>
           </div>
           
@@ -130,7 +129,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Button asChild className="btn-primary text-lg px-8 py-4">
               <Link href="/catalogo">
-                Ver Todos los Productos
+               See All Products
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
@@ -143,10 +142,10 @@ export default function HomePage() {
         <div className="container-max section-padding">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Lo que dicen nuestros <span className="text-gradient">clientes</span>
+             What our   <span className="text-gradient">customers</span>say
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              Miles de personas ya han transformado su movilidad con EcoRide.
+              Thousands of people have already transformed their mobility with Sunrise Store
             </p>
           </div>
           
@@ -154,20 +153,20 @@ export default function HomePage() {
             {[
               {
                 name: 'María González',
-                role: 'Profesional IT',
-                comment: 'Mi EcoRide Pro Max ha revolucionado mi commute diario. 65km de autonomía y cero preocupaciones por el tráfico.',
+                role: 'IT Professional',
+                comment: 'My EcoRide Pro Max has revolutionized my daily commute. 65km of range and zero traffic worries..',
                 rating: 5
               },
               {
                 name: 'Carlos Mendoza',
                 role: 'Delivery Rider',
-                comment: 'Con el EcoRide Cargo, mi negocio de delivery ha crecido un 40%. Potencia, capacidad y ahorro en combustible.',
+                comment: 'With Sunrise, my delivery business has grown by 40%. Power, capacity, and fuel savings..',
                 rating: 5
               },
               {
                 name: 'Ana Rodríguez',
-                role: 'Estudiante',
-                comment: 'El Urban es perfecto para la universidad. Plegable, ligero y con una autonomía increíble. ¡Lo recomiendo 100%!',
+                role: 'student',
+                comment: 'The Urban is perfect for college. Foldable, lightweight, and with incredible battery life. I highly recommend it!',
                 rating: 5
               }
             ].map((testimonial, index) => (
@@ -194,7 +193,7 @@ export default function HomePage() {
       <section className="py-16 bg-white border-t border-gray-200">
         <div className="container-max section-padding">
           <div className="text-center mb-12">
-            <h3 className="text-xl font-semibold text-[#667085] mb-8">Tecnología de confianza</h3>
+            <h3 className="text-xl font-semibold text-[#667085] mb-8">Trusted technology</h3>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
               {['Samsung', 'LG Energy', 'Panasonic', 'Bosch', 'Continental'].map((brand) => (
                 <div key={brand} className="text-2xl font-bold text-[#0B0F10] hover:opacity-100 transition-opacity duration-300">
@@ -211,21 +210,21 @@ export default function HomePage() {
         <div className="container-max section-padding text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              ¿Listo para la revolución eléctrica?
+             Ready for the electric revolution?
             </h2>
             <p className="text-xl text-green-100 leading-relaxed">
-              Únete a la comunidad EcoRide y descubre una nueva forma de moverte por la ciudad. 
-              Sostenible, eficiente y llena de estilo.
+             Join the EcoRide community and discover a new way to get around the city.
+              Sustainable, efficient, and full of style.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="bg-[#39FF14] text-[#0B0F10] hover:bg-[#2EE610] text-lg px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
                 <Link href="/catalogo">
-                  Explorar Productos
+                  Explore Products
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
               <Button asChild variant="outline" className="text-lg px-8 py-4 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-[#00B347]">
-                <Link href="/contacto">Hablar con Experto</Link>
+                <Link href="/contacto">Talk to an Expert</Link>
               </Button>
             </div>
           </div>

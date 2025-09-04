@@ -26,15 +26,15 @@ export default function NosotrosPage() {
             <div className="space-y-8">
               <div>
                 <Badge className="bg-[#39FF14]/10 text-[#00B347] border-[#39FF14]/20 rounded-full px-4 py-2 mb-6">
-                  🌱 Fundada en 2020
+                  🌱 Founded in 2020
                 </Badge>
                 <h1 className="text-4xl md:text-5xl font-bold text-[#0B0F10] leading-tight mb-6">
-                  Revolucionando la <span className="text-gradient">Movilidad Urbana</span>
+                  Revolutionizing the <span className="text-gradient">Urban Mobility</span>
                 </h1>
                 <p className="text-lg text-[#667085] leading-relaxed">
-                  En EcoRide, creemos que el futuro del transporte urbano debe ser sostenible, 
-                  inteligente y accesible para todos. Por eso desarrollamos scooters eléctricos 
-                  que combinan tecnología de vanguardia con diseño premium.
+                  At Sunrise Store, we believe the future of urban transportation must be sustainable,
+                  smart, and accessible for everyone. That's why we develop electric scooters
+                  that combine cutting-edge technology with premium design.
                 </p>
               </div>
             </div>
@@ -60,10 +60,9 @@ export default function NosotrosPage() {
             <Card className="bg-white/10 backdrop-blur-sm border-white/20 rounded-3xl">
               <CardContent className="p-8 text-center">
                 <Target className="w-12 h-12 text-[#39FF14] mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-4">Nuestra Misión</h3>
+                <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-green-100 leading-relaxed">
-                  Democratizar la movilidad eléctrica ofreciendo scooters de calidad premium 
-                  a precios accesibles, contribuyendo a ciudades más limpias y sostenibles.
+                  Democratize electric mobility by offering premium-quality scooters at affordable prices, contributing to cleaner and more sustainable cities.
                 </p>
               </CardContent>
             </Card>
@@ -71,10 +70,10 @@ export default function NosotrosPage() {
             <Card className="bg-white/10 backdrop-blur-sm border-white/20 rounded-3xl">
               <CardContent className="p-8 text-center">
                 <Leaf className="w-12 h-12 text-[#39FF14] mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-4">Nuestra Visión</h3>
+                <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
                 <p className="text-green-100 leading-relaxed">
-                  Ser la marca líder en movilidad eléctrica en Latinoamérica, 
-                  reconocida por nuestra innovación, calidad y compromiso ambiental.
+                  To be the leading electric mobility brand in Latin America,
+recognized for our innovation, quality, and environmental commitment.
                 </p>
               </CardContent>
             </Card>
@@ -87,10 +86,10 @@ export default function NosotrosPage() {
         <div className="container-max section-padding">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B0F10] mb-4">
-              Nuestros <span className="text-gradient">Valores</span>
+              Our <span className="text-gradient">Values</span>
             </h2>
             <p className="text-lg text-[#667085] max-w-2xl mx-auto">
-              Los principios que guían cada decisión y nos impulsan hacia la excelencia.
+              The principles that guide every decision and drive us toward excellence.
             </p>
           </div>
           
@@ -98,23 +97,23 @@ export default function NosotrosPage() {
             {[
               {
                 icon: Leaf,
-                title: 'Sostenibilidad',
-                description: 'Comprometidos con el medio ambiente y la reducción de emisiones urbanas.'
+                title: 'Sustainability',
+                description: 'Committed to the environment and the reduction of urban emissions.'
               },
               {
                 icon: Award,
-                title: 'Calidad Premium',
-                description: 'Productos diseñados con los más altos estándares de calidad y durabilidad.'
+                title: 'Premium Quality',
+                description: 'Products designed with the highest standards of quality and durability.'
               },
               {
                 icon: Users,
-                title: 'Orientación al Cliente',
-                description: 'Experiencia excepcional desde la compra hasta el servicio postventa.'
+                title: 'Customer Orientation',
+                description: 'Exceptional experience from purchase to after-sales service.'
               },
               {
                 icon: Zap,
-                title: 'Innovación',
-                description: 'Tecnología de vanguardia para mejorar constantemente nuestros productos.'
+                title: 'Innovation',
+                description: 'Cutting-edge technology to constantly improve our products.'
               }
             ].map((value, index) => (
               <Card key={index} className="group card-hover border-0 shadow-lg rounded-3xl">
@@ -136,16 +135,16 @@ export default function NosotrosPage() {
         <div className="container-max section-padding">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              EcoRide en <span className="text-gradient">Números</span>
+              Sunrise Store in <span className="text-gradient">Numbers</span>
             </h2>
           </div>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { number: '15,000+', label: 'Clientes Satisfechos' },
-              { number: '50+', label: 'Ciudades Cubiertas' },
-              { number: '99.2%', label: 'Satisfacción del Cliente' },
-              { number: '24/7', label: 'Soporte Técnico' }
+              { number: '15,000+', label: 'Satisfied Customers' },
+              { number: '50+', label: 'Covered Cities' },
+              { number: '99.2%', label: 'Customer Satisfaction' },
+              { number: '24/7', label: 'Technical Support' }
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-[#39FF14] mb-2">{stat.number}</div>
@@ -214,7 +213,7 @@ export default function NosotrosPage() {
         <div className="container-max section-padding">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B0F10] mb-4">
-              Tu <span className="text-gradient">Confianza</span> es Nuestra Prioridad
+              your <span className="text-gradient">Trust</span> is our priority
             </h2>
           </div>
           
@@ -255,17 +254,17 @@ export default function NosotrosPage() {
         <div className="container-max section-padding text-center">
           <div className="max-w-2xl mx-auto space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              ¿Tienes alguna pregunta?
+              Do you have any questions?
             </h2>
             <p className="text-xl text-gray-400 leading-relaxed">
-              Nuestro equipo está aquí para ayudarte a encontrar el scooter perfecto para ti.
+              Our team is here to help you find the perfect scooter for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="btn-primary text-lg px-8 py-4">
-                <Link href="/contacto">Contactar Equipo</Link>
+                <Link href="/contacto">Contact Team</Link>
               </Button>
               <Button asChild variant="outline" className="text-lg px-8 py-4 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-[#00B347]">
-                <Link href="/catalogo">Ver Productos</Link>
+                <Link href="/catalogo">See Products</Link>
               </Button>
             </div>
           </div>
