@@ -132,7 +132,7 @@ export const products: Product[] = [
     slug: 'electric-scooter-pro',
     name: 'Electric Scooter Pro',
     price: 2150,
-    images: ['/IMG/electric-scooter-2.jpeg'],
+    images: ['/IMG/electric-scooter.jpeg'],
     autonomia_km: 25,
     vel_max_kmh: 25,
     potencia_w: 300,
